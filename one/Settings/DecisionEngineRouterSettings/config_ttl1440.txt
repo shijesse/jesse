@@ -1,0 +1,15 @@
+Scenario.name = DecisionEngineRouter_1440
+Group.router = DecisionEngineRouter
+Scenario.endTime = 337504
+Scenario.updateInterval = 1
+Group.nrofHosts = 98
+Events1.hosts = 0,98
+Group.msgTtl = 1440
+Events2.filePath = TraceData/infocom2006.txt
+Report.reportDir = reports/DecisionEngineRouterSettings_8_15000/1440/
+Group.bufferSize = 5M
+DecisionEngineRouter.decisionEngine = community.DistributedBubbleRap
+DecisionEngineRouter.communityDetectAlg = routing.community.KCliqueCommunityDetection
+DecisionEngineRouter.K = 8
+DecisionEngineRouter.familiarThreshold = 15000
+DecisionEngineRouter.centralityAlg = routing.community.SWindowCentrality
